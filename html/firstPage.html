@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deployment Log</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .container { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+    .header { background-color: #e0e0e0; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+    .log { background-color: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 5px; white-space: pre-wrap; }
+    .warning { color: red; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Deployment Details</h2>
+    </div>
+
+    <div class="log">
+        Started by user <strong>c5348767</strong><br>
+        <span class="warning">Warning: using debug mode, /home/rc/logs/archesenc/deploy-gcpcqarc07-Archesenc2024.02.Rel-3-1709640046959.log will not be created.</span><br>
+        This request is made by <strong>c5348767</strong><br>
+        <h3>Dumping params used in this run:</h3>
+        <code>
+product => archesenc<br>
+service => gcpcqarc07<br>
+buildname => Archesenc2024.02.Rel-3<br>
+action => deploy<br>
+deploy_option => none<br>
+deploy_password => XXXXXXXX<br>
+push => 0<br>
+dataset_option => none<br>
+skip_ssws_restart => 1<br>
+msgs => 0:Deploying archesenc Archesenc2024.02.Rel-3 to gcpcqarc07<br>
+deploy-qual 04:00:59: : Qualification wont run as no qual options are selected<br>
+<br>
+...<br>
+<br>
+Finished running /home/rc/bin/everywhere/rc-scrubber2 pushed-deployments -product archesenc -bydate -service gcpcqarc07 -keep 3 -force -excludeDataset -password XXXXX
+        </code>
+    </div>
+</div>
+
+</body>
+</html>
