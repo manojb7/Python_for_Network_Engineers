@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <p>Please enter the details below and we will get back to you</p>
+
+    <form action="" method="post">
+        <br>
+        <p>First Name</p>
+        <input type="text" name="first_name" id="first_name" required>
+        <br>
+        <p>Last Name</p>
+        <input type="text" name="last_name" id="last_name" required>
+        <br>
+        <p>Email</p>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <p>Reason for contact</p>
+        <br>
+        
+        <input type="radio" name="resaonForContact" id="Enquiry" checked > Enquiry<br>
+        <input type="radio" name="resaonForContact" id="Comment" > Comment<br>
+        <input type="radio" name="resaonForContact" id="Other"> Other <br>
+        <br>
+        <p>Message</p>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

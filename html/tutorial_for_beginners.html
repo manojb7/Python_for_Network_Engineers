@@ -6,6 +6,8 @@
     <title>HTML Tutorial for beginners</title>
 </head>
 <body>
+    <!-- scroll to bottom -->
+    <a href="#bottom">Go to bottom</a>
     <h1>HTML Tutorial for beginners</h1>
     <h2>introduction</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, molestias nisi temporibus adipisci neque repellendus voluptate maiores ipsa odio, optio velit assumenda hic illo fugit ipsum vitae delectus placeat molestiae!</p>
@@ -56,5 +58,96 @@
             <li><strong>b.</strong> Please make sure you are aware of the impact of stop/start of a VM. <span style="color: coral;"><b> can disrupt any ongoing testing/deployment done by any other user</span></b> using this service.</li>
             <li><strong>c.</strong> In case a VM does not come up, which can happen if there are any <span style="color:magenta;">space related issues</span>, reach out to the Service Automation team with a HOA ticket.</li>
         </ul>
+
+        <p>for my portfolio <a href="portfolio.html"><img src="images/portfolio.png" alt="portfolio image" width="30" height="25" style="vertical-align: text-bottom;"></a></p>
+        <p>Things to do in checkboxes and select true always</p>
+        
+        <form action="">
+            <input type="checkbox" name="todo1" id="todo1" checked>
+            <label for="todo1">Learn HTML</label><br>
+            <input type="checkbox" name="todo2" id="todo2">
+            <label for="todo2">Learn CSS</label><br>
+            <input type="checkbox" name="todo3" id="todo3">
+            <label for="todo3">Learn JavaScript</label><br>
+            <input type="checkbox" name="todo4" id="todo4">
+            <label for="todo4">Learn PHP</label><br>
+            <input type="checkbox" name="todo5" id="todo5">
+            <label for="todo5">Learn Python</label><br>
+            <input type="checkbox" name="todo6" id="todo6">
+            <label for="todo6">Learn Java</label><br>
+            <input type="checkbox" name="todo7" id="todo7">
+            <label for="todo7">Learn C++</label><br>
+            <input type="checkbox" name="todo8" id="todo8">
+            <label for="todo8">Learn C#</label><br>
+            <input type="checkbox" name="todo9" id="todo9">
+            <label for="todo9">Learn Ruby</label><br>
+            <input type="checkbox" name="todo10" id="todo10" checked>
+            <label for="todo10">Learn Swift</label><br>
+            <input type="checkbox" name="todo11" id="todo11">
+            <label for="todo11">Learn Kotlin</label><br>
+            <input type="checkbox" name="todo12" id="todo12">
+            <label for="todo12">Learn Go</label><br>
+            <input type="checkbox" name="todo13" id="todo13">
+            <label for="todo13">Learn TypeScript</label><br>
+            <input type="checkbox" name="todo14" id="todo14">
+            <label for="todo14">Learn Dart</label><br>
+            <input type="checkbox" name="todo15" id="todo15">
+            <label for="todo15">Learn R</label><br>
+            
+        </form=>
+<p>true or false</p>
+    <input type="radio" name="truefalse" id="true" value="true">
+    <label for="true">True</label><br>
+    <input type="radio" name="truefalse" id="false" value="false">
+    <label for="false">False</label><br>
+
+    <p>some pic lists</p>
+    <ul>
+        <li><a href="firstPage.html"><img src="images/1.png" alt="img of number one" width="20" height="20"></a></li>
+        <li><a href="firstPage.html"><img src="images/2.png" alt="img of number two" width="20" height="20"></a></li>
+    </ul>
+    <!-- scroll to top -->
+    <a href="#top">Go to top</a>
+    <div id="bottom"></div>
+    <!-- Creating a table to get name,age and location
+      if age is above 18 then color should be green else red
+    -->
+    <h2>Table</h2>
+    <table border="1" id="ageTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td><a href="portfolio.html">Manoj</a></td>
+            <td>25</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>15</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>20</td>
+            <td>UK</td>
+        </tr>
+    </table>
+    <!-- adding a line break -->
+    <hr
+    <!-- a script to change the color of the age based on the condition -->
+    <script>
+        var table = document.getElementById("ageTable");
+        for (var i = 1; i < table.rows.length; i++) {
+            var age = table.rows[i].cells[1].innerHTML;
+            if (age > 18) {
+                table.rows[i].cells[1].style.color = "green";
+            } else {
+                table.rows[i].cells[1].style.color = "red";
+            }
+        }
+    </script>
 </body>
 </html>
